@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calista Dreams XAUUSD</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {
+      if(f.fbq) return;
+      n=f.fbq=function(){
+        n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+      };
+      if(!f._fbq) f._fbq=n;
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s);
+    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1473067331041044');
+    fbq('track', 'PageView');
+
+    function goTelegram(e) {
+      e.preventDefault();
+
+      const telegramUrl = "https://t.me/+Bwg1FxrA5_FhZTY8";
+      let redirected = false;
+
+      function redirectToTelegram() {
+        if (redirected) return;
+        redirected = true;
+        window.location.href = telegramUrl;
+      }
+
+      fbq('trackCustom', 'TelegramClick', {
+        destination: 'telegram',
+        channel_name: 'Calista Dreams XAUUSD'
+      }, {
+        event_callback: redirectToTelegram
+      });
+
+      setTimeout(redirectToTelegram, 1200);
+    }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+                  url('bg.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .container {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 16px;
+      gap: 10px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #FFD700;
+      margin-bottom: 4px;
+    }
+
+    .tagline {
+      font-size: 14px;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .images {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      width: 100%;
+      max-width: 700px;
+      flex-wrap: wrap;
+    }
+
+    .images img {
+      width: 48%;
+      max-width: 220px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #FFD700;
+    }
+
+    .proof {
+      font-size: 14px;
+      background: rgba(0,0,0,0.6);
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin-top: 4px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      background: #FFD700;
+      color: black;
+      padding: 14px 18px;
+      width: 92%;
+      max-width: 360px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 30px;
+      box-shadow: 0 0 15px #FFD700;
+      animation: pulse 1.5s infinite;
+      display: inline-block;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 5px #FFD700; }
+      50% { box-shadow: 0 0 25px #FFD700; }
+      100% { box-shadow: 0 0 5px #FFD700; }
+    }
+
+    .footer {
+      font-size: 12px;
+      opacity: 0.85;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      .tagline,
+      .proof {
+        font-size: 13px;
+      }
+
+      .images img {
+        width: 47%;
+        height: 220px;
+      }
+
+      .btn {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div>
+      <h1>Calista Dreams XAUUSD</h1>
+      <p class="tagline">Daily Gold Signals | High Accuracy | Trusted Results</p>
+    </div>
+
+    <div class="images">
+      <img src="image1.jpeg" alt="Signal Preview">
+      <img src="image3.jpeg" alt="Profit Proof">
+    </div>
+
+    <div class="proof">
+      ✅ Real Signals<br>
+      💰 Daily Profit Results<br>
+      🚀 Direct Access to Telegram Updates
+    </div>
+
+    <a href="#" class="btn" onclick="goTelegram(event)">JOIN TELEGRAM NOW</a>
+
+    <div class="footer">
+      Limited Time Access • Free Signals
+    </div>
+  </div>
+
+</body>
+</html>
